@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unkempt:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+:root {
+  --primary-color: #088e78;
+  --primary-color-dark: #004337;
+  --primary-color-light: #0cc9aa;
+  --primary-color-light-bg: #bfded9;
+  --secondary-color: #c9420c;
+  --secondary-color-dark: #8f2f09;
+  --secondary-color-light: #ff8757;
+  --dark-color: #1d1d1d;
+  --light-color: #fff;
+  --font-family-primary: 'Montserrat', sans-serif;
+  --font-family-secondary: 'Unkempt', cursive;
+}
+
+body,
+html {
+  /* Esto es para el parallax */
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--light-color);
+  /* background-image:url("../imagenes/pattern.png"); 
+	background-repeat: no-repeat;
+	background-position: center;*/
+}
+
+a:link,
+a:visited {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a.active {
+  color: var(--secondary-color-dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  text-align: center;
+  font-family: var(--font-family-secondary);
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  font-size: 5vw;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+ul li {
+  list-style-position: inside;
+}
+
+/* COLORES */
+
+.bg-oscuro {
+  background-color: var(--dark-color);
+  color: var(--light-color);    
+}
+
+.txt-oscuro {
+  color: var(--dark-color);
+}
+
+.bg-claro {
+  background-color: var(--light-color);
+  color: var(--dark-color);    
+}
+
+.txt-claro {
+  color: var(--light-color);
+}
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+  color: var(--light-color); 
+}
+
+.txt-primary-color {
+  color: var(--primary-color);
+}
+
+.bg-primary-color-dark {
+  background-color: var(--primary-color-dark);
+  color: var(--light-color); 
+}
+
+.txt-primary-color-dark {
+  color: var(--primary-color-dark);
+}
+
+.bg-primary-color-light {
+  background-color: var(--primary-color-light);
+  color: var(--dark-color); 
+}
+
+.txt-primary-color-light {
+  color: var(--primary-color-light);
+}
+
+.bg-primary-color-light-bg {
+  background-color: var(--primary-color-light-bg);
+  color: var(--dark-color); 
+}
+
+.txt-primary-color-light-bg {
+  color: var(--primary-color-light-bg);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary-color);
+  color: var(--light-color); 
+}
+
+.txt-secondary-color {
+  color: var(--secondary-color);
+}
+
+.bg-secondary-color-dark {
+  background-color: var(--secondary-color-dark);
+  color: var(--light-color); 
+}
+
+.txt-secondary-color-dark {
+  color: var(--secondary-color-dark);
+}
+
+.bg-secondary-color-light {
+  background-color: var(--secondary-color-light);
+  color: var(--dark-color); 
+}
+
+.txt-secondary-color-light {
+  color: var(--secondary-color-light);
+}
+
+
+/* HEADER */
+
+a.nav-link {
+  font-size: 1rem;
+  color: var(--light-color);
+  padding: 1.5rem;
+  margin-right: 15px;
+}
+
+a.nav-link:hover,
+a.nav-link:active,
+a.nav-link.active {
+  background-color: transparent;
+  color: var(--primary-color-dark) !important;
+  border-bottom: var(--primary-color-light) solid 2px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/MenuHamburguesa.svg");
+}
+
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon:active,
+.navbar-toggler-icon.active {
+  background-image: url("../images/MenuHamburguesa.svg");
+}
+
+
+/* GENERALES */
+
+.logo img {
+  width: 150px;
+  max-width: 150px;
+  height: auto;
+  margin: 10px 0;
+  transition: 0.4s all ease;
+}
+
+.logo img:hover {
+  transform:rotateY(180deg);
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contenedor img {
+  background-size: cover;
+  transition: 0.4s all ease;
+}
+
+.contenedor img:hover {
+  transform: scale(1.3);
+}
+
+.SobreElemento {
+  position: absolute;
+  padding: 15px;
+  top:100px;
+  right: 0;
+  /*     transform: translate(-50%, -50%);
+ */
+}
+
+.SobreElemento2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Parallax */
+.bgimg-1 {
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/PerroCallejero-parallax.jpg");
+  height: 400px;
+}
+
+.iconos a:link i,
+.iconos a:visited i {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 0.4rem;
+}
+
+.iconos a:hover i,
+.iconos a:active i {
+  color: var(--primary-color-light);
+}
+
+.iconoInd {
+  font-size: 1.5rem;
+  color: var(--primary-color-dark) !important;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--primary-color-light-bg);
+  border-radius: 4px;
+  margin: 0.4rem;
+}
+
+.iconoInd:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color-light-bg);
+}
+
+.iconoInd2 {
+  font-size: 5.5rem;
+  color: var(--secondary-color) !important;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--primary-color-light-bg);
+  border-radius: 4px;
+  margin: 0.4rem;
+  width: calc(100% / 5);
+}
